@@ -8,7 +8,7 @@
 
 ## APIs
 
-# accounts/signup/
+### accounts/signup/
 
 - To register an new account you have to enter the username, email, password and confirm_password
 - If the account created successfully the response will be the user data and a token created once the account created and a message tells you that you have successfully registered
