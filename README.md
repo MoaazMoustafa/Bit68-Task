@@ -1,4 +1,4 @@
-### Instructions to run the code
+# Instructions to run the code
 
 - Clone the repo from github
 - Create your virtual environment
@@ -14,18 +14,18 @@
 - If the account created successfully the response will be the user data and a token created once the account created and a message tells you that you have successfully registered
 - If there is anything wrong happens the response will be the error that happend
 
-# accounts/login/
+### accounts/login/
 
 - The response will be the token of the loged in user
 
-# product/list/
+### product/list/
 
 - This endpoint will return all the products in the database but the user must be authenticated and the token must be provided in the headers of the request
 
-# product/details/id
+### product/details/id
 
 - This endpoint will return a product with a specific id which is given in the url but the user must be authenticated and the token must be provided in the headers of the request
 
-# product/create/
+### product/create/
 
 - This endpoint will create a product. The body of the request must contain the name and the price of the product and the user who sends the request will be the seller of the product so he has to be authenticated so the token must be sent within the headers of the request
