@@ -15,7 +15,7 @@
 - If there is anything wrong happens the response will be the error that happend
 
 ### accounts/login/
-
+- You have to enter your username and password
 - The response will be the token of the loged in user
 
 ### product/list/
