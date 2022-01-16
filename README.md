@@ -2,7 +2,10 @@
 
 - Clone the repo from github
 - Create your virtual environment
-- Run pip install -r requeriments.txt
+- Run 
+ ```
+ pip install -r requeriments.txt
+ ```
 - Make sure to configure your database You have to create a postgresql database with the same name and the same user and password or You can use sqlite3 database if you like.
 - Here are the endpoints
 
