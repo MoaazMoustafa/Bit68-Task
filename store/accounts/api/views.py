@@ -16,7 +16,8 @@ def signup(request):
     if user.is_valid():
         user.save()
         response['data'] = {'user': user.data, 'token': Token.objects.get(
-            user__username=user.data.get('username')).key, 'message': 'user created successfully'
+            user__username=user.data.get('username')).key,
+            'message': 'user created successfully'
         }
         response['status'] = status.HTTP_201_CREATED
     else:
