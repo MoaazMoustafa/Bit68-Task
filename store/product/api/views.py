@@ -47,9 +47,6 @@ def create_product(request):
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def detail_filtered_by_username(request, username):
-    # username = request.data.get('name')
-    # user_id = User.objects.get(username=username).id
-    user_id = get_object_or_404(User, username=username).id
-    products = Product.objects.filter(seller=user_id)
+    products = Product.objects.filter(seller__username=username)
     ser_products = ProductSerializer(products, many=True)
     return Response(data=ser_products.data, status=status.HTTP_200_OK)
